@@ -11,12 +11,12 @@
             upvote_iframe = "<iframe src='" + upvote_url + "' style='display: none'></iframe>";
 
         // Style
-        this.css( "background-image", "url(http://assets.behance.net/img/site/elements.png?cb=903413478)" );
+        this.css( "background-image", "url(http://artsvit.com/images/bhbtn.png)" );
         this.css( "cursor", "pointer" );
         this.css( "display", "block" );
         this.css( "width", "100px" );
         this.css( "height", "100px" );
-        this.css( "background-position", "-0 -325px" );
+        this.css( "background-position", "-300px -0px" );
         this.css( "text-indent", "-9999px" );
         this.css( "font-size", "0" );
         this.css( "line-height", "0" );
@@ -32,7 +32,7 @@
         // On click, make a request to up the count and change the button sprite.
         this.click(function() {
             $( this ).append( upvote_iframe );
-            $( this ).css( "background-position", "-300px -325px" );
+            $( this ).css( "background-position", "-200px -200px" );
         })
 
         return this;
